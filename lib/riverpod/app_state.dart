@@ -16,11 +16,6 @@ class BudgetNotifier extends StateNotifier<List<Budget>> {
         .where((b) => b != budget)
         .toList(); // Memperbarui state dengan menghapus budget
   }
-
-  // Mengosongkan daftar budget
-  void resetBudgets() {
-    state = []; // Mengatur ulang state menjadi list kosong
-  }
 }
 
 // Provider untuk BudgetNotifier
